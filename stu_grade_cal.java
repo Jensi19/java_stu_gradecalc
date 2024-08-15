@@ -2,9 +2,8 @@ import java.util.*;
 import java.util.Scanner;
 public class Main{
 	public static void main(String[] args) {
-	    Scanner sc = new Scanner(System.in);
-	    
-		System.out.print("Enter the number of subjects: ");
+	Scanner sc = new Scanner(System.in);
+	System.out.print("Enter the number of subjects: ");
         int sub_no = sc.nextInt();
 
         int[] marks = new int[sub_no];
@@ -14,15 +13,15 @@ public class Main{
             marks[i] = sc.nextInt();
         }
 		
-		int total_marks = 0;
-		for(int mark : marks){
-		    total_marks += mark;
-		}
+	int total_marks = 0;
+	for(int mark : marks){
+		total_marks += mark;
+	}
 		
-		double avg_percentage = (double)total_marks/sub_no;
-		
-		char grade;
-		if (avg_percentage >= 90) {
+	double avg_percentage = (double)total_marks/sub_no;
+	
+	char grade;
+	if (avg_percentage >= 90) {
             grade = 'A';
         } else if (avg_percentage >= 80) {
             grade = 'B';
